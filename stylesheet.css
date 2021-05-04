@@ -33,7 +33,7 @@ header .logo {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #fff;
+  color: white;
 }
 
 header ul {
@@ -46,7 +46,7 @@ header li {
 
 header ul li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   margin: 0 15px;
   font-weight: bold;
 }
@@ -57,4 +57,94 @@ header ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#top .top-text{
+  z-index: 1;
+}
+
+#top .top-img {
+  position: relative;
+  margin-left: 50px;
+  border-radius: 50%;
+  background: #252627;
+  box-shadow:  7px 7px 17px #171819, -7px -7px 17px #333435;
+  user-select: none;
+}
+
+#top .top-img img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+#about {
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h2 {
+  opacity: .5;
+  font-size: 10em;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  letter-spacing: 2px;
+}
+
+#about .content {
+  display: flex;
+  justify-content: center;
+  background: lightskyblue;
+  border-radius: 50px;
+  padding: 30px;
+  z-index: 2;
+  width: 1000px;
+  height: 500px;
+  margin-top: 100px;
+}
+
+#about .about-img {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#about .about-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#about .about-text {
+  padding: 20px;
+  width: 60%;
+  height: 100%;
+}
+
+#about .about-text h3 {
+  font-size: 1.4em;
+  color: white;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+#about .about-text p {
+  color: white;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+#about .about-text img {
+  filter: invert(1);
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
 }

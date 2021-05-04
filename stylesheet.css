@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', 'Ubuntu Mono', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+html {
+  background: lightblue;
+}
+
+section {
+  padding: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: deepskyblue;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+}

@@ -20,7 +20,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 20px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +51,7 @@ header ul li a {
   font-weight: bold;
 }
 
-#top {
+.top {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -59,30 +59,29 @@ header ul li a {
   align-items: center;
 }
 
-#top .top-text{
-  z-index: 1;
-}
-
-#top .top-img {
+.top .logo {
   position: relative;
-  margin-left: 50px;
-  border-radius: 50%;
-  background: #252627;
-  box-shadow:  7px 7px 17px #171819, -7px -7px 17px #333435;
-  user-select: none;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
 }
 
-#top .top-img img {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 50%;
-  user-select: none;
-  -webkit-touch-callout: none;
+.logo-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: .2em;
 }
 
-#about {
+.logo-subtitle {
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: center;
+  letter-spacing: .2em;
+}
+
+.about {
   min-height: 90vh;
   position: relative;
   display: flex;
@@ -90,7 +89,7 @@ header ul li a {
   align-items: center;
 }
 
-#about h2 {
+.about h2 {
   opacity: .5;
   font-size: 10em;
   color: white;
@@ -100,7 +99,7 @@ header ul li a {
   letter-spacing: 2px;
 }
 
-#about .content {
+.about .content {
   display: flex;
   justify-content: center;
   background: lightskyblue;
@@ -112,39 +111,146 @@ header ul li a {
   margin-top: 100px;
 }
 
-#about .about-img {
+.about .about-image {
   width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
 }
 
-#about .about-img img {
+.about .about-image img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
 
-#about .about-text {
+.about .about-text {
   padding: 20px;
   width: 60%;
   height: 100%;
 }
 
-#about .about-text h3 {
+.about .about-text h3 {
   font-size: 1.4em;
   color: white;
   letter-spacing: 4px;
   margin-bottom: 10px;
 }
-#about .about-text p {
+
+.about .about-text p {
   color: white;
   letter-spacing: 1px;
   line-height: 2rem;
 }
-#about .about-text img {
+
+.about .about-text img {
   filter: invert(1);
   width: 30px;
   height: 30px;
   margin-top: 20px;
+}
+
+.skill {
+  position: relative;
+}
+
+.skill .content {
+  display: flex;
+  justify-content: center;
+  background: lightskyblue;
+  border-radius: 50px;
+  padding: 20px;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.skill h2 {
+  opacity: .5;
+  font-size: 10em;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  letter-spacing: 2px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-item {
+  display: flex;
+  flex: 0 0 50%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.skill-image-wrapper {
+  flex: 0 0 60px;
+  margin-right: 20px;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-body p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.skill-title {
+  margin-bottom: 3px;
+}
+
+.rate {
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  letter-spacing: .3em;
+}
+
+.rate:before,
+.rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+  display: inline-block;
+  height: 20px;
+  content: "★★★★★";
+}
+
+.rate:before {
+  color: #ddd;
+}
+
+.rate:after {
+  overflow: hidden;
+  white-space: nowrap;
+  color: #f181b4;
+}
+
+.rate1:after {
+  width: 20px;
+}
+
+.rate2:after {
+  width: 40px;
+}
+
+.rate3:after {
+  width: 60px;
+}
+
+.rate4:after {
+  width: 80px;
+}
+
+.rate5:after {
+  width: 100px;
 }

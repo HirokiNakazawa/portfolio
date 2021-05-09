@@ -84,6 +84,7 @@ header ul li a {
 .about {
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .about h2 {

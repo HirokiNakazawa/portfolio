@@ -284,3 +284,10 @@ header ul li a {
   margin-top: 10px;
   text-align: center;
 }
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px){
+  .about .content {
+    display: block;
+  }
+}
